@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,700&family=Teko:wght@300;400;500;600;700&display=swap');
+
+*, *::after, *::before {
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    color: #222;
+}
+
+.page-container {
+    width: 1240px;
+    height: auto;
+    margin: 0 auto;
+    /* display: none; */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container .card {
+    width: 60%;
+    height: auto;
+    /* border: 1px solid red; */
+    padding: 25px;
+}
+
+.flex-container .card h1 {
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all ease-in 300ms;
+}
+
+.flex-container .card h1:not(.full-name)::before{
+    display: inline-block;
+    content:'< ';
+    padding-right: 7px;
+}
+.flex-container .card h1:not(.full-name)::after{
+    display: inline-block;
+    padding-left: 7px;
+    content:' />';
+}
+
+.flex-container .card h1:hover,
+.flex-container .card h1:focus{
+    letter-spacing: 3px;
+    text-decoration: underline;
+}
+
+/* .card h1:not(.full-name):first-letter {
+    text-decoration: underline;
+} */
+
+.flex-container .card:nth-child(odd) {
+    width: 40%;
+    /* background-color: rgb(223, 49, 83); */
+}
+
+.card .profile {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 15px solid rgba(34, 34, 34, 0.5);
+    position: relative;
+    transition: all ease-in 300ms;
+
+    /* background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear; */
+}
+
+.card .profile:hover{
+    border-color: rgba(34, 34, 34, 0.9);
+}
+
+
+.card .profile::before {
+    display: block;
+    content: '';
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 100%;
+    background: #222 url("../images/sweety_borke.jpg") center center no-repeat;
+    background-size: cover;
+    transition: all ease-in 300ms;
+    filter: grayscale(100%);
+}
+
+
+.card .profile:hover::before {
+    transform: scale(0.95) rotate(-5deg);
+    filter: grayscale(0);
+}
+
+.name-role {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-role p {
+    display: block;
+    text-align: right;
+    width: 90%;
+}
+
+.name-role .career {
+    padding: 20px 0;
+    align-self: flex-start;
+}
+
+.career-objective {
+    text-align: left;
+}
+
+.card.name-role h1.full-name {
+    font-size: 125px;
+    text-align: right;
+    letter-spacing: 12px;
+    line-height: 102px;
+    padding-right: 20px;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all ease-in 200ms;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
+
+.card.name-role h1.full-name:hover {
+    letter-spacing: 4px;
+}
+
+.card .name-role p {
+    font-size: 14px;
+}
+
+.card .skills-item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+}
+
+.rating {
+    display: flex;
+}
+
+.rating .dots {
+    width: 15px;
+    height: 15px;
+    margin: 3px;
+    border: 2px solid #222;
+    border-radius: 50%;
+}
+
+
+.rating.one .dots:nth-child(1),
+.rating.two .dots:nth-child(1),
+.rating.three .dots:nth-child(1),
+.rating.four .dots:nth-child(1),
+.rating.five .dots:nth-child(1) {
+    background-color: #222;
+}
+
+
+.rating.two .dots:nth-child(2),
+.rating.three .dots:nth-child(2),
+.rating.four .dots:nth-child(2),
+.rating.five .dots:nth-child(2) {
+    background-color: #222;
+}
+
+.rating.three .dots:nth-child(3),
+.rating.four .dots:nth-child(3),
+.rating.five .dots:nth-child(3) {
+    background-color: #222;
+}
+
+.rating.four .dots:nth-child(4),
+.rating.five .dots:nth-child(4) {
+    background-color: #222;
+}
+
+.rating.five .dots:nth-child(5) {
+    background-color: #222;
+}
+
+
+.skills-item:hover p {
+    color: blue;
+}
+
+.skills-item:hover .rating.five .dots:nth-child(5),
+.skills-item:hover .rating.four .dots:nth-child(4),
+.skills-item:hover .rating.five .dots:nth-child(4),
+.skills-item:hover .rating.three .dots:nth-child(3),
+.skills-item:hover .rating.four .dots:nth-child(3),
+.skills-item:hover .rating.five .dots:nth-child(3),
+.skills-item:hover .rating.two .dots:nth-child(2),
+.skills-item:hover .rating.three .dots:nth-child(2),
+.skills-item:hover .rating.four .dots:nth-child(2),
+.skills-item:hover .rating.five .dots:nth-child(2),
+.skills-item:hover .rating.one .dots:nth-child(1),
+.skills-item:hover .rating.two .dots:nth-child(1),
+.skills-item:hover .rating.three .dots:nth-child(1),
+.skills-item:hover .rating.four .dots:nth-child(1),
+.skills-item:hover .rating.five .dots:nth-child(1) {
+    background-color: blue;
+    border-color: blue;
+}
+
+
+/* .rating.four .dots:nth-child(4),
+.rating.five .dots:nth-child(4) {
+    border: 2px solid blue;
+    background-color: blue;
+} */
+
+
+/* .skills-item:hover .four {
+    background-color: blue;
+} */
+
+.phone .fa-mobile-alt {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.fa-envelope {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.fa-linkedin {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.experience{
+    justify-content: space-between;
+    padding: 7px 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pb-5{
+    padding-bottom: 5px;
+}
+
+.pb-5 .cap {
+text-transform: uppercase;
+}

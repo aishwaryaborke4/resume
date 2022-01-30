@@ -1,0 +1,45 @@
+@media screen and (min-width: 600px) and (max-width:1023px) {
+    body {
+        background-color: red;
+    }
+
+    .page-container {
+        width: 100%;
+    }
+
+    .flex-container .card{
+        width: 45%;
+    }
+
+    .card .profile {
+        width: 280px;
+        height: 280px;
+    }
+
+    .card .profile::before {
+        width: 250px;
+        height: 250px;
+    }
+
+    .card.name-role h1.full-name {
+        font-size: 70px;
+        letter-spacing: 6px;
+        line-height: 60px;
+        padding-right: 16px;
+        font-weight: 500;
+    }
+
+    .name-role .career {
+        padding: 20px 0 0 0;
+    }
+
+    /* .name-role .career {
+        height: 28px;
+        padding: 1px 0px px 14px;
+    } */
+
+    .career-objective {
+        padding-top: 0px;
+    }
+
+}

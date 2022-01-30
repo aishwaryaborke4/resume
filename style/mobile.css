@@ -1,0 +1,51 @@
+@media screen and (max-width: 600px) {
+    body {
+        background-color: chartreuse;
+    }
+
+    .page-container {
+        width: 100%;
+    }
+
+    .flex-container .card {
+        width: 100%;
+    }
+
+    .card .profile {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .card .profile::before {
+        width: 250px;
+        height: 250px;
+        left: 0;
+        top: 0;
+    }
+
+    .card.name-role h1.full-name {
+        font-size: 80px;
+        letter-spacing: 6px;
+        line-height: 60px;
+        padding-right: 16px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .name-role p{
+        text-align: center;
+    }
+
+    .flex-container .card:nth-child(odd) {
+        width: 100%;
+    }
+
+    .card.name-role h1.full-name {
+        padding-right: 2px;
+    }
+
+    .name-role .career {
+        padding: 20px 0 0 0;
+    }
+}

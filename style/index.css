@@ -279,5 +279,9 @@ body {
 }
 
 .pb-5 .cap {
-text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+.project .order-list li{
+    line-height: 25px;
 }

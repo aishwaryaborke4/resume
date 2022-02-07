@@ -62,7 +62,7 @@ body {
     text-decoration: underline;
 } */
 
-.flex-container .card:nth-child(odd) {
+.flex-container .card:nth-child(even) {
     width: 40%;
     /* background-color: rgb(223, 49, 83); */
 }
@@ -113,6 +113,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: fit-content;
 }
 
 .name-role p {
@@ -284,4 +285,11 @@ body {
 
 .project .order-list li{
     line-height: 25px;
+}
+
+.print-resume-header,
+.print-career-objective,
+.print-experience-summary,
+.progress-bar {
+    display: none;
 }

@@ -43,6 +43,10 @@
         padding: 25px;
     }
 
+    .print-card h1 {
+        text-decoration: underline;
+    }
+
     .print-resume-header .profession {
         font-size: 16px;
     }
@@ -73,5 +77,13 @@
 
   .about-me {
       display: none;
+  }
+
+  .print-list {
+      padding-left: 20px;
+  }
+
+  .print-ul {
+    padding-left: 38px;   
   }
 }

@@ -283,6 +283,10 @@ body {
     text-transform: uppercase;
 }
 
+.order-list {
+    padding-left: 38px;
+}
+
 .project .order-list li{
     line-height: 25px;
 }

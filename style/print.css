@@ -1,0 +1,77 @@
+@media print {
+
+    @page {
+        margin: 0;
+    }
+
+    .page-container {
+        padding: 5%;
+        box-sizing: border-box;
+    }
+
+    .background,
+    .profile-photo,
+    .name-role, 
+    .contact {
+        display: none;
+    }
+
+    .flex-container .card {
+        width: 100% !important;
+    }
+
+    .print-resume-header,
+    .print-career-objective,
+    .print-experience-summary {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .print-resume-header {
+        /* border: 1px solid #000; */
+        flex-basis: 100%;
+        text-align: right;
+    }
+
+    .print-resume-header h2 {
+        font-size: 38px;
+    }
+
+    .print-card {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .print-resume-header .profession {
+        font-size: 16px;
+    }
+
+    .flex-container {
+        flex-wrap: none;
+        flex-direction: column;
+    }
+
+    .flex-container .card h1{
+        text-decoration: underline;
+    }
+
+    .flex-container .card h1:not(.full-name)::before{
+        content:'';
+    }
+    .flex-container .card h1:not(.full-name)::after{
+        content:'';
+    }
+
+    .rating {
+        display: none;
+    }
+    
+    .progress-bar {
+        display: flex;
+    }
+
+  .about-me {
+      display: none;
+  }
+}

@@ -37,6 +37,10 @@
         text-align: center;
     }
 
+    .flex-container .card:nth-child(even) {
+        width: 100%;
+    }
+
     .flex-container .card:nth-child(odd) {
         width: 100%;
     }

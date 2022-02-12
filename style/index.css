@@ -252,17 +252,7 @@ body {
     background-color: blue;
 } */
 
-.phone .fa-mobile-alt {
-    padding-right: 10px;
-    vertical-align: middle;
-}
-
-.fa-envelope {
-    padding-right: 10px;
-    vertical-align: middle;
-}
-
-.fa-linkedin {
+.details {
     padding-right: 10px;
     vertical-align: middle;
 }

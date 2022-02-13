@@ -274,7 +274,8 @@ body {
 }
 
 .order-list {
-    padding-left: 38px;
+    list-style: none;
+    list-style-type: none;
 }
 
 .project .order-list li{
